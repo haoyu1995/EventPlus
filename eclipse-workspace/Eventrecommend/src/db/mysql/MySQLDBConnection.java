@@ -12,7 +12,6 @@ import java.util.Set;
 import Entity.Item;
 import Entity.Item.ItemBuilder;
 import db.DBConnection;
-import db.DBConnectionFactory;
 import external.TicketmasterAPI;
 
 public class MySQLDBConnection implements DBConnection {
@@ -217,7 +216,7 @@ public class MySQLDBConnection implements DBConnection {
 			for(String category: item.getCategories()) {
 				stmt.setString(1, item.getItemId());
 				stmt.setString(2, category);
-				boolean success = stmt.execute();
+				stmt.execute();
 //				System.out.println(success);
 			}
 		}catch (SQLException e) {
