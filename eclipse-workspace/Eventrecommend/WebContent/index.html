@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<title>Main Page</title>
+  	<link rel="stylesheet" type="text/css" href="styles/main_style.css">
+</head>
+
+<body>
+	<header class="top_header">
+    	<nav class="top_nav">
+      		<a href="#">Home</a>
+      		<a href="#contact">Contact</a>
+      		<a href="#about">About</a>
+    	</nav>
+    	<div class = "top_header_right">
+    		<span id="welcome-msg">Welcome!</span>
+    		<a id="login-link" href="#">Sign in</a> 
+        	<a id="logout-link" href="logout">Sign out</a> 
+        	<a id="sign-up-link" href="#">Sign up</a> 
+    		<i id = "avatar" class="avatar fas fa-user"></i>
+    	</div>
+  	</header>
+
+  	<div class="main_section">
+    <header>
+      <p>Find<br><span>Your Event</span></p>
+    </header>
+    <section>
+    <div id="login-form"> 
+          <label for="username">Username:</label> 
+          <input id="username" name="username" type="text"> 
+          <label for="password">Password:</label> 
+          <input id="password" name="password" type="password"> 
+          
+          <button id="login-btn">Login</button> 
+          <button id="sign-btn">Sign up</button> 
+          
+          <p id="login-error"></p> 
+     </div> 
+        
+     <div id="register-form"> 
+          <label for="username">Username:</label> 
+          <input id="username-signUp" name="username" type="text"> 
+          <label for="password">Password:</label> 
+          <input id="password-signUp" name="password" type="password"> 
+          <label for="firstname">First Name:</label> 
+          <input id="firstname">
+          <label for="lastname">Last Name:</label> 
+          <input id="lastname">
+          <button id="sign-up-btn">Sign Up</button> 
+          <p id="register-error"></p> 
+      </div> 
+      <aside>
+      	<div class="sidenav_icon">
+      		<i class="fab fa-slideshare"></i>
+      	</div>
+        <nav id="side_nav">
+          <a href="#" id = "near_by" class = "main-nav-btn"><i class="fas fa-search-location"></i>Nearby</a>
+          <a href="#" id = "Favorite" class = "main-nav-btn"><i class="fas fa-heart"></i>My Favorite</a>
+          <a href="#" id = "recommend" class = "main-nav-btn"><i class="fas fa-thumbs-up"></i>Recommend for You</a>
+        </nav>
+      </aside>
+      <ul id = "event_list">
+        <li class = "event">
+          <img src="">
+          <div>
+            <a class="event_name" href="#">Item_name</a>
+            <p class="event_category">Category</p>
+          </div>
+          <p class="event_address">address<br/>San Francisco<br/> CA</p>
+          <div class = "favor-icon"><i class="far fa-heart"></i>
+          </div>
+           
+        </li>
+      </ul>
+    </section>
+  </div>
+
+    <footer>
+    <div id = "about">
+    	<p>What We Do</p>
+    	<p>"Help you find the best place around."</p>
+    </div>
+    <ul id = "contact">
+      <li>
+      	<p><i class="fas fa-map-marker-alt"></i></p>
+        <p>QiHCI office, CA</p>
+      </li>
+      <li>
+        <p><i class="fas fa-envelope"></i></p>
+        <p>info@qihci.com</p>
+      </li>
+      <li>
+        <p><i class="fas fa-phone"></i></p>
+        <p>+1 800 123 456</p>
+      </li>
+    </ul>
+  </footer>
+  
+  <script src="scripts/main.js"></script>
+  <script src="https://kit.fontawesome.com/ff03ef9ee8.js"></script>
+</body>
+</html>
